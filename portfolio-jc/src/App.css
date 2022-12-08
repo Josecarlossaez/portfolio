@@ -1,16 +1,16 @@
 /************ Custom Font ************/
 @font-face {
-	font-family: Centra;
+	font-family: Orbitron;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
 	font-weight: 700;
 }
 @font-face {
-	font-family: Centra;
+	font-family: Orbitron;
 	src: url('./assets/font/CentraNo2-Medium.ttf');
 	font-weight: 500;
 }
 @font-face {
-	font-family: Centra;
+	font-family: Orbitron;
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
@@ -89,6 +89,9 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+}
+.logo-navbar{
+  width: 200px;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -238,21 +241,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/background-initial.webp');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -262,7 +256,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color:white;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
