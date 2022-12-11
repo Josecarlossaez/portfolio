@@ -2,11 +2,12 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/solologo.png";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import * as Icon from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 function Banner() {
+  console.log(Icon)
   
     
   return (
@@ -14,9 +15,18 @@ function Banner() {
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
+            
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div className={isVisible ? "animate__animated animate__zoomIn" : ""} id="image-banner">
+                  <img src={headerImg} alt="Header Img"/>
+                </div>}
+            </TrackVisibility>
+          </Col>
+          <Col xs={12} md={6} xl={5}>
+          <TrackVisibility >
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn" : ""} id="texto-banner">
                 
                 <h1>{`Hi! I'm JcS@ez `} </h1>
                 <p>My fullname is Jose Carlos Sáez Fernández. I'm 39 years old. I have studied Web development in Ironhack school. I am a junior full-stack web developer. I can make the website more, more interactive with web animation.
@@ -25,14 +35,6 @@ function Banner() {
         </p>
                  
               </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
             </TrackVisibility>
           </Col>
         </Row>

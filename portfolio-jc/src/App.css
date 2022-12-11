@@ -82,6 +82,8 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -132,9 +134,7 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
-#github-icon{
-  
-}
+
 
 .social-icon a::before {
     content: "";
@@ -157,6 +157,20 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+#curriculum{
+  
+  font-weight: lighter;
+  font-family: Orbitron;
+  height: 42px;
+  margin: 0 0 0 0 ;
+  padding: 18px 5px;
+  border-color: #B8B8B8;
+  display: flex;
+  align-items: center;
+
+}
+
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -184,6 +198,7 @@ span.navbar-text {
 }
 .navbar-text button:hover {
   color: #121212;
+
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -239,12 +254,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
+
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 100px 0 100px 0;
   background-image: url('./assets/img/background-initial.webp');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: calc(100vh)
+}
+#texto-banner{
+  margin-top: 100px;
+ margin-left: -150px;
+}
+#image-banner{
+  margin-top: 90px;
+  
 }
 
 .banner h1 {
@@ -281,7 +306,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+ width:60%;
+  /* animation: updown 3s linear infinite; */
 }
 @keyframes updown {
     0% {
@@ -300,17 +326,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 0 0 0 0;
   position: relative;
+  height: calc(100vh);
+  width: calc(100vw)
+  
+}
+#skills{
+  background: #151515;
+  height: calc(100vh)
 }
 .skill-bx {
   background: #151515;
-  border-radius: 64px;
+  width:100%;
   text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
+  /* padding: 60px 50px; */
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .skill h2 {
+  margin-top:60px;
 	font-size: 45px;
 	font-weight: 700;
 }
@@ -322,12 +357,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 14px 0 75px 0;
 }
 .skill-slider {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
 .skill-slider .item img {
-  width: 50%;
+  width: 40%;
   margin: 0 auto 15px auto;
 }
 .background-image-left {
@@ -336,6 +371,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+  margin-top: 0px;
+
 }
 
 /************ Projects Css ************/

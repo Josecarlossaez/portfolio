@@ -3,11 +3,13 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/nombre_y_eslogan2.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
+import email from '../assets/img/email1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import github from "../assets/img/github.svg"
 import { HashLink } from 'react-router-hash-link';
 import {BrowserRouter as Router} from "react-router-dom";
+import * as Icon from "react-bootstrap-icons"
 function NavBar() {
     const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
@@ -48,11 +50,14 @@ function NavBar() {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#" id="github-icon"><img src={github} alt="" /></a>
-                
-              </div>
-             
+                <a href="https://www.linkedin.com/in/jose-carlos-s%C3%A1ez-fern%C3%A1ndez-94824b258/" target="_blank"><img src={navIcon1} alt="" /></a>
+                <a href="https://github.com/Josecarlossaez" target="_blank" id="github-icon"><img src={github} alt="" /></a>
+                <a href="mailto:jcsaezfernandez@gmail.com" id="email-icon"><img src={email} alt="" /></a>
+              </div>  
+              <a href="https://drive.google.com/file/d/1AVGSTAJ58WZnHbs_KwLqTfzXpYsDqP5R/view?usp=sharing" target="_blank" style={{textDecoration:"none"}}>
+                  <button className="vvd" id="curriculum"><span>Curriculum  <Icon.Download/></span></button>
+              </a>   
+              
             </span>
           </Navbar.Collapse>
         </Container>
