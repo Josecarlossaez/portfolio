@@ -376,7 +376,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
-.project {
+.project-image-data{
+  display:"flex";
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color:black;
+  opacity: 0.7;
+}
+.project-image-data img{
+max-height: 400px;
+}
+.project-image-data .text-project2{
+width:60%
+}
+
+
+/* .project {
   padding: 80px 0;
   position: relative;
   background-color: black;
@@ -571,7 +588,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
-}
+} */
 
 /************ Footer Css ************/
 .footer {
