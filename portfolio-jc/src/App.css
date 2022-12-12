@@ -425,7 +425,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: rgb(236, 236, 236);
 }
 .title-projects img{
-  width:10%
+  width:auto;
+  height:auto;
  
 }
 .title-projects h1{
