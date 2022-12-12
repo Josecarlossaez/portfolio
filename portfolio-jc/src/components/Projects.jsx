@@ -4,6 +4,8 @@ import ironFashion from "../assets/img/ironFashion.png";
 import spaceFighter from "../assets/img/spaceFighter.png";
 import DataImage from './DataImage';
 import ImageData from './ImageData';
+import logo from "../assets/img/solologo.png";
+
 
 
 function Projects() {
@@ -24,20 +26,23 @@ function Projects() {
         },
         {
             title : "spaceFighter",
-            description: " ",
+            description: " When I was a child, I went with my parents to eat something to the bar. In the bar, normally there was a machine wich you can play a videogame. One of my favourites is called Aero Fighters, from Neo Geo. Is for that, I made an airplane video game. I want to revive push the button one thousand times per minute with with all your energies ",
             collaborators: "Curro Jiménez",
-            link:"https://iron-fashion.cyclic.app/",
+            link:"https://josecarlossaez.github.io/space-fighter/",
             picture: spaceFighter,
         }
 
     ]
     console.log("listProjects", listProjects)
   return (
-    <div  id="projects">
-   
+    <section id="projects" className='projects'>
+       <div className='title-projects'>
+        <img src={logo} alt="" />
+        <h1>Projects</h1>
+       </div>
     {
       listProjects.map((project, index)=> {
-        console.log("indice",index)
+      
         return(
             
             <div>
@@ -47,7 +52,7 @@ function Projects() {
         )
       })
     }
-    </div>
+    </section>
   )
 }
 

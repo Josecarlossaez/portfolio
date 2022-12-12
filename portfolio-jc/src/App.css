@@ -261,7 +261,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh)
+  height: calc(87vh)
 }
 #texto-banner{
   margin-top: 100px;
@@ -334,7 +334,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 #skills{
   background: #151515;
-  height: calc(100vh)
+  height: calc(75vh)
 }
 .skill-bx {
   background: #151515;
@@ -383,13 +383,50 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
   background-color: white;
   color:black;
-  opacity: 0.7;
+  
+  padding: 3% 15% 3% 15%;
+
+}
+.title-projects{
+  height: 1%;
+  display: flex;
+  background: #545454;
+
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  font-family: "Orbitron";
+
+}
+#data-image{
+  background-color: rgb(236, 236, 236);
+}
+.title-projects img{
+  width:10%
+ 
+}
+.title-projects h1{
+  font-size:7rem
 }
 .project-image-data img{
 max-height: 400px;
 }
 .project-image-data .text-project2{
 width:60%
+}
+.projects{
+ background-color: white;
+}
+.grow-image{
+  border-radius: 10px;
+  transition: all 0.3s;
+  
+ 
+}
+.grow-image:hover{
+   transform: scale(1.1);
+   opacity: 0.8;
+
 }
 
 

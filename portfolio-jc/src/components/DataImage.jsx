@@ -8,10 +8,12 @@ function DataImage({title, description, collaborators, link,picture}) {
        <h2>{title}</h2>
        <h3>Collaborators:{collaborators}</h3>
        <p>{description}</p>
-       <a href={link}>Visite:{title}</a>
+       <a href={link} target="blank">Visite:{title}</a>
         </div>
         <div>
-            <img src={picture} alt="" />
+        <a href={link} target="blank" >
+           <img src={picture} alt="" className="grow-image"/>
+        </a>
         </div>
     </div>
 
