@@ -6,8 +6,8 @@ function DataImage({title, description, collaborators, link,picture}) {
          <div className='project-image-data' style={{display:"flex"}}>
         <div className='text-project2'>
        <h2>{title}</h2>
-       <h3>Collaborators:{collaborators}</h3>
        <p>{description}</p>
+       <h5>Collaborators:{collaborators}</h5>
        <a href={link} target="blank">Visite:{title}</a>
         </div>
         <div>

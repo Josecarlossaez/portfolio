@@ -33,7 +33,7 @@ function Projects() {
         }
 
     ]
-    console.log("listProjects", listProjects)
+   
   return (
     <section id="projects" className='projects'>
        <div className='title-projects'>
