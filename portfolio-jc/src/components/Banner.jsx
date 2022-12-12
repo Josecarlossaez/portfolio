@@ -12,8 +12,8 @@ function Banner() {
     
   return (
     <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
+      <Container id="cont">
+        <Row className="main-banner">
           <Col xs={12} md={6} xl={7}>
             
             <TrackVisibility>
