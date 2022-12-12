@@ -15,7 +15,7 @@ function ImageData(props) {
            
         </div>
         <div className='text-project2'>
-       <h2>{title}</h2>
+       <h2 className='title-h2'>{title}</h2>
        <p>{description}</p>
        <h5>Collaborators:{collaborators}</h5>
        <a href={link} target="blank">Visite:{title}</a>

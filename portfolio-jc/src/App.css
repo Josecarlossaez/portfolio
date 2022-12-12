@@ -424,11 +424,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .title-projects h1{
   font-size:7rem
 }
+.text-project2{
+  font-size: 21px;
+  color:#433f3f;
+  font-family:"Orbitron"
+}
 .project-image-data img{
 max-height: 400px;
 }
+
 .project-image-data .text-project2{
 width:60%
+}
+.text-project2 h2{
+  font-size:3rem
 }
 .projects{
  background-color: white;
