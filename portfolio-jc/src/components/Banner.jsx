@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/logo_completo negro.png";
+import headerImg from "../assets/img/logo_completo2.png";
 import * as Icon from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,9 +11,9 @@ function Banner() {
   
     
   return (
-    <section className="banner" id="home">
-      <Container id="cont">
-        <Row className="main-banner">
+    <section className="banner" id="home" style={{display:"flex", justifyContent:"center"}}>
+      <Container id="cont" >
+        <Row className="main-banner" >
           <Col xs={12} md={6} xl={7}>
             
             <TrackVisibility>
