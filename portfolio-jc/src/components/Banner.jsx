@@ -11,7 +11,7 @@ function Banner() {
   
     
   return (
-    <section className="banner" id="home" style={{display:"flex", justifyContent:"center"}}>
+    <section className="banner" id="home" >
       <Container id="cont" >
         <Row className="main-banner" >
           <Col xs={12} md={6} xl={7}>
