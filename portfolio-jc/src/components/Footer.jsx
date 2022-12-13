@@ -14,7 +14,7 @@ function Footer() {
     <Container>
       <Row className="align-items-center">
         
-        <Col size={12} sm={6}>
+        <Col size={12} sm={6} id="img-footer">
         <a href='#home'>
              <img src={logo} alt="Logo" />
         </a>
