@@ -14,7 +14,7 @@ function Banner() {
     <section className="banner" id="home" >
       <Container id="cont" >
         <Row className="main-banner" >
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={6}>
             
             <TrackVisibility>
               {({ isVisible }) =>
